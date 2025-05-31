@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            body {
+                background-color: rgb(42, 42, 22);
+            }
+            button {
+                width: 150px;
+                height: 30;
+                font-size: 15px;
+                font: sans-serif;
+                background-color: lightblue;
+                padding: 10px;
+                margin: 10px;
+                border: 0cm;
+                border-radius: 2cm;
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: row-reverse;
+
+            }
+
+            h2 {
+                font-family: sans-serif;
+                padding: 10px;
+                margin: 10px;
+                color: rgb(243, 85, 85);
+            }
+
+            h3 {
+                font-family: sans-serif;
+                padding: 10px;
+                margin: 10px;
+                font-weight: 70;
+                color: white;
+            }
+
+            h4 {
+                font-family: sans-serif;
+                padding: 10px;
+                padding-left: 40px;
+                margin: 5px;
+                font-weight: 100;
+                color: rgb(153, 161, 161);
+            }
+
+            .field {
+                display: flex;
+            }
+
+            input[type="text"] {
+                width: 500px;
+                height: 30px;
+                border: 0px;
+                display:inline-flex;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="search-container"> 
+            <div class="button-container">
+                <a  href="googleClone.html"> <button> Back to Google Search </button> </a> 
+            </div>
+            <form class="search" type="search" action="https://www.google.com/search">
+                
+                <h2> Advanced Search: </h2>
+                <h3> Find pages with...</h3>
+                <div class="field"> 
+                    <h4> all these words:</h4>  
+                    <input style="margin-left:100px;" type="text" name = "as_q" >
+                </div>
+                <div class="field"> 
+                    <h4> this exact word or phrase: </h4>  
+                    <input style="margin-left: 27px" type="text" name = "as_epq" >
+                </div>
+                <div class="field"> 
+                    <h4> any of these words: </h4> 
+                    <input style="margin-left: 74px" type="text" name = "as_oq" >
+                </div>
+                <div class="field"> 
+                    <h4> none of these words </h4>
+                    <input style="margin-left: 70px" type="text" name = "as_eq" >
+                </div>
+                <div class="field"> 
+                    <h4> numbers ranging from: </h4> 
+                    <input style="margin-left: 52px; width: 240px;" type="text" name = "as_nlo" >
+                    <input style="margin-left: 18px; width: 240px;" type="text" name = "as_nhi" >
+                </div>
+                <h3> Then narrow your results by...</h3>
+                <div class="field"> 
+                    <h4> language:</h4>  
+                    <select style="margin-left: 125px; width: 500px; height: 30px" class="dropdown">
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+
+                </div>
+                <div class="field"> 
+                    <h4> region: </h4>  
+                    <input style="margin-left: 150px" type="text" name = "" >
+                </div>
+                <div class="field"> 
+                    <h4> last update: </h4> 
+                    <select style="margin-left: 117px; width: 500px; height: 30px" class="dropdown">
+                        <option value="anytime">anytime</option> 
+                        <option value="past 24 hours">past 24 hours</option>
+                        <option value="past week">past week</option>
+                        <option value="past month">past month</option>
+                        <option value="past year">past year</option>
+                    </select>
+                </div>
+                <div class="field"> 
+                    <h4> site or domain: </h4>
+                    <input style="margin-left: 95px" type="text" name = "" >
+                </div>
+                <div class="field"> 
+                    <h4> terms appearing: </h4> 
+                    <select style="margin-left: 78px; width: 500px; height: 30px" class="dropdown">
+                        <option value="anywhere in the page">anywhere in the page</option> 
+                        <option value="in the title of the page">in the title of the page</option>
+                        <option value="in the text of the page">in the text of the page</option>
+                        <option value="in the URL of the page">in the URL of the page</option>
+                    </select>
+                </div>
+                <div class="field"> 
+                    <h4> file type: </h4> 
+                    <select style="margin-left: 140px; width: 500px; height: 30px" class="dropdown">
+                        <option value="any format">any format</option> 
+                        <option value="Adobe Acrobat PDF (.pdf)">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="Adobe Postscript (.ps)">Adobe Postscript (.ps)</option>
+                        <option value="Autodesk DWF (.dwf)">Autodesk DWF (.dwf)</option>
+                        <option value="Google Earth KML (.kml)">Google Earth KML (.kml)</option>
+                        <option value="Microsoft Excel (.xls)">"Microsoft Excel (.xls)"</option>
+                    </select>
+                </div>
+                <div class="field"> 
+                    <h4> usage rights: </h4> 
+                    <select style="margin-left: 105px; width: 500px; height: 30px" class="dropdown">
+                        <option value="not filtered by license"> not filtered by license</option> 
+                        <option value="free to use or share">free to use or share</option>
+                        <option value="free to use or share, even commercially">free to use or share, even commercially</option>
+                        <option value="free to use share or modify">free to use share or modify</option>
+                        <option value="free to use or share">free to use or share</option>
+                        <option value="free to use, share or modify, even commercially">free to use, share or modify, even commercially</option>
+                    </select>
+                </div>
+
+                <input style="height:30px; background-color: rgb(9, 97, 164); color: white; padding:2px; margin-left: 800px;" value="Advanced Search" type="submit"> 
+            </form>
+
+        </div>
+         
+    </body>
+</html>
