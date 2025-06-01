@@ -1,15 +1,21 @@
-# Google Homepage Clone
+# Google Clone – CS50 Web Project 0
 
-This is a practice project where I recreated the look of the Google homepage using HTML and CSS.
+This is a front-end clone of Google’s homepage, part of [Harvard's CS50 Web Programming with Python and JavaScript](https://cs50.harvard.edu/web/) (Project 0).
 
-## ⚠️ Disclaimer:
+### ⚠️ Disclaimer:
 This project is built only for educational and practice purposes. I do not claim ownership of Google's design, logo, or any associated assets. All rights belong to their respective owners. No copyright infringement is intended.
 
-## Features
-- Clean and minimal layout similar to Google's homepage
-- Fully responsive design
-- Basic styling with CSS
+### Features
+- Styled homepage resembling Google's layout
+- Functional Search, Image Search, and Advanced Search buttons
+- Responsive layout using CSS
 
-## Technologies Used
+### Technologies Used
 - HTML5
 - CSS3
+
+### 📂 Project Purpose
+This project was completed as part of a course assignment to demonstrate:
+- HTML/CSS layout and styling
+- Understanding of forms and inputs
+- Responsive design principles
